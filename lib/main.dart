@@ -8,8 +8,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.teal,
-        body: Container(),
+        appBar: AppBar(
+          backgroundColor: Colors.red,
+          title: Text("Demo"),
+        ),
+        body: Center(
+          child: Text(" I am Learning "),
+        ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.red,
+          child: Icon(Icons.add),
+        ),
       ),
     );
   }
