@@ -35,52 +35,60 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.0,
                     fontWeight: FontWeight.bold),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.fromLTRB(50.0, 10.0, 50.0, 5.0),
-//                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
-                padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+977 123 456 7890',
-                      style: TextStyle(
-                          color: Colors.teal[900],
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20.0),
-                    )
-                  ],
+//                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0)
+                child: Padding(
+                  padding:
+                      EdgeInsets.symmetric(vertical: 7.5, horizontal: 10.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.phone,
+                        color: Colors.teal,
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        '+977 123 456 7890',
+                        style: TextStyle(
+                            color: Colors.teal[900],
+                            fontFamily: 'Source Sans Pro',
+                            fontSize: 20.0),
+                      )
+                    ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.fromLTRB(50.0, 10.0, 50.0, 5.0),
-                padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'pratap@email.com',
-                      style: TextStyle(
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                        color: Colors.teal[900],
+                //padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
+                // Card Class doesn't contains padding property
+                child: Padding(
+                  padding:
+                      EdgeInsets.symmetric(vertical: 7.5, horizontal: 10.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.email,
+                        color: Colors.teal,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        'pratap@email.com',
+                        style: TextStyle(
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 20.0,
+                          color: Colors.teal[900],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
